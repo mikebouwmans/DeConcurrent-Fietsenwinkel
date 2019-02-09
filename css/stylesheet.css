@@ -1,0 +1,328 @@
+.danger{
+    padding: 20px 10px;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    border-radius: 5px;
+    color: #ff5956;
+    margin: 20px 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    height: auto;
+    -webkit-box-shadow: 3px 1px 41px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 1px 41px -10px rgba(0,0,0,0.75);
+    box-shadow: 3px 1px 41px -10px rgba(0,0,0,0.75);
+
+}
+
+/* Header.php */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    background: url(/images/gun_metal.png) repeat;
+    -webkit-box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 41px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 41px -10px rgba(0,0,0,0.75);
+}
+nav{
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    clear: both;
+    display: table;
+}
+#logoimage{
+    float: left;
+    display: block;
+    width: 150px;
+    height: 80px;
+}
+#logoimage img{
+    width: 150px;
+    height: 80px;
+    padding: 5px 10px;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 33px 20px;
+}
+#winkelwagen a{
+    display: block;
+    padding: 24px 20px;
+}
+#winkelwagen a img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Page Content */
+
+.impressiefoto{
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+.rij{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.inner{
+    /* padding: 0 20px; */
+    position: relative;
+}
+.inner h4{
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 10px 0;
+}
+.inner h4 a{
+    text-decoration: none;
+    color: #000;
+}
+.inner h4 a:hover{
+    text-decoration: underline;
+}
+.inner img{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+.index .inner img{
+    object-fit: cover;
+    height: 265px;
+
+}
+.productinfo{
+    padding: 10px;
+    border-left: 1px solid black;
+    position: relative;
+    height: 100%;
+
+}
+.description{
+    color: gray;
+    height: 30%;
+}
+hr{
+    margin: 10px 0;
+}
+.products{
+    padding: 10px;
+}
+.products img{
+    padding: 5px;
+    border: 1px solid black;
+    width: 100%;
+    object-fit: cover;
+}
+.allproducts .inner img{
+    width: 100%;
+    object-fit: cover;
+}
+.success{
+    padding: 20px 10px;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.cart img{
+    max-width: 100px;
+}
+.cart .table{
+    width: 100%;
+    display: table;
+
+}
+.cart .table tr th{
+    width: 25%;
+    display: inline-table;
+    margin-bottom: 10px;
+
+}
+.cart .table tr td{
+    padding: 5px;
+    text-align: center;
+    display: inline-table;
+    width: 25%;
+}
+.table tr{
+    display: inline-block;
+    width: 100%;
+}
+.table tr:nth-child(2){
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+.table tr:nth-child(n+3) {
+    border-bottom: 1px solid lightgray;
+}
+.line{
+    width: 100%;
+    border-top: 1px solid black;
+    margin: 30px 75px;
+}
+.allproducts .inner{
+    border-radius: 24px;
+    padding: 20px;
+    background: white;
+}
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+}
+.productinfo .button{
+    position: absolute;
+    bottom: 0;
+}
+.rij > [class*='grid-kolom-']{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+}
+.grid-kolom-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.grid-kolom-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.grid-kolom-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.grid-kolom-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.grid-kolom-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.grid-kolom-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.grid-kolom-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.grid-kolom-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.grid-kolom-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.grid-kolom-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.grid-kolom-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.grid-kolom-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Registreer pagina */
+#form{
+    display: block;
+}
+.input{
+    display: block;
+    padding: 7px 15px;
+    border: 1px solid #ccc;
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 300px;
+}
+#submit{
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+#submit:hover{
+    background-color: lightgrey;
+}
